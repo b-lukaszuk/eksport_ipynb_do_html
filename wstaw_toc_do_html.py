@@ -1,5 +1,5 @@
-# python 3.8
-# M-x run python
+# uzywano w Python 3.8
+# uruchamianie w Emacs-ie -> M-x run-python
 import re
 
 def wyodr_naglowki(tekst):
@@ -53,10 +53,10 @@ def wyodr_id(tag):
 
 def wyodr_tekst(tag):
     """
-    wyodrebnia tekst z tag-u (naglowka) pomiedzy ">tekst<"
+    wyodrebnia tekst z tag-u (naglowka) z pomiedzy >tekst<
 
     Input:
-    ---
+    
         tag - Str w postaci '<h1 id="...>'
     
     Output:
@@ -75,7 +75,7 @@ def zwroc_kotwice(tag, wciecie=4):
     Input:
     ---
         tag - Str w postaci '<h1 id="...>'
-        wciecie - Int, ile "&nbsp;" na poziom naglowka (ponizej h1)
+        wciecie - Int, ile "&nbsp;" na dany poziom naglowka (ponizej h1)
     
     Output:
     ---
