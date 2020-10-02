@@ -5,7 +5,7 @@ Z plikow *.html usuwa komorki z kodem (ale zostawia ich output)<br>
 Do plikow *.html dodaje spis tresci<br>
 <br>
 Przydatne komendy bashowe:
-- egzekuje wszystkie komorki z danego pliku *.ipynb na wszystkich znalezionych plikach w (pod)folderach z obecnego folderu
+- wykonuje wszystkie komorki z danego pliku *.ipynb na wszystkich znalezionych plikach w (pod)folderach z obecnego folderu
 ```bash
 find -name '*.ipynb' -execdir jupyter nbconvert --to notebook --inplace --execute {} +
 ```
