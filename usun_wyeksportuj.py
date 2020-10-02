@@ -1,3 +1,5 @@
+# uzywano w Python3.8
+
 ## wczytanie plikow *.ipynb
 import toc_do_html as t2html
 import glob
@@ -58,8 +60,7 @@ for plik_ipynb in pliki_ipynb:
 # wczytanie wszystkich plikow html
 pliki_html = glob.glob("*.html")
 
-# importujemy regex-a do zamiany linijki tekstu z pliku html
-
+# wstawienie spisow tresci do kazdego z plikow html
 for plik_html in pliki_html:
     # wczytanie pliku
     f_odczyt = open(plik_html)
@@ -77,7 +78,7 @@ for plik_html in pliki_html:
     
 
 dzis = os.popen("date '+%d_%m_%Y'").read().strip()
-# dodamy jeszcze plik o tym, ze sa to nowe obliczenia
+# dodamy jeszcze plik o tym, ze jest to nowy eksport (timestamp)
 f_nowy = open("./" + "nowy_" + dzis + ".txt", "w")
 f_nowy.write("nowy_" + dzis)
 f_nowy.close()
