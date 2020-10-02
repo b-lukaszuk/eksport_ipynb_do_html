@@ -1,6 +1,7 @@
 # Eksport plikow *.ipynb do *.html
 
 Eksportuje pliki *.ipynb z danego folderu do plikow *.html<br>
+Z plikow *.html usuwa komorki z kodem (ale zostawia ich output)<br>
 Do plikow *.html dodaje spis tresci<br>
 <br>
 Przydatne komendy bashowe:
