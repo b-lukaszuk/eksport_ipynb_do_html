@@ -2,7 +2,7 @@
 
 Eksportuje pliki *.ipynb z danego folderu do plikow *.html<br>
 Z plikow *.html usuwa komorki z kodem (ale zostawia ich output)<br>
-Do plikow *.html dodaje spis tresci<br>
+Do plikow *.html dodaje spis tresci (hieprlacza do naglowkow z html-a)<br>
 <br>
 Uzycie:
 1. Wchodze do katalogu w ktorym sa pliki *.ipynb (1 lub wiecej), `usun_wyeksportuj.py`, `wstaw_toc_do_html.py`
