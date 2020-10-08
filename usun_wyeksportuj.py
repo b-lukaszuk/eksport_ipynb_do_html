@@ -1,7 +1,7 @@
 # uzywano w Python3.8
 
 ## wczytanie plikow *.ipynb
-import toc_do_html as t2html
+import wstaw_toc_do_html as t2html
 import glob
 pliki_ipynb = glob.glob("./*.ipynb")
 
