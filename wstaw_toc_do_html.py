@@ -31,8 +31,8 @@ def wyodr_level(tag):
         Int - poziom naglowka
     """
 
-    # regex z lookbehind negative (?!)
-    return int(re.search(r'(?!<h)\d', tag).group(0))
+    # regex z positive lookbehind (?<=)
+    return int(re.search(r'(?<=<h)\d', tag).group(0))
 
 
 def wyodr_id(tag):
