@@ -31,13 +31,13 @@ for plik_ipynb in pliki_ipynb:
     json_plik.close()
     data = json.loads(json_data)
     komorki = data["cells"]
-    
+
     # znajdz komorki z kodem
     for i in komorki:
         if i['cell_type'] == "code":
             # usun kod
             i['source'] = ""
-            
+
     # zapisz wyczyszczony plik
     with open('./eksport_do_html/'+ plik_ipynb, 'w') as outfile:
         json.dump(data, outfile, indent = 4)
@@ -66,7 +66,7 @@ for plik_html in pliki_html:
     f_odczyt = open(plik_html)
     f_text = f_odczyt.read()
     f_odczyt.close()
-    
+
     # dodanie do tekstu z pliku html toc-a
     html_z_toc = t2html.zwroc_html_z_toc(f_text)
 
@@ -75,7 +75,7 @@ for plik_html in pliki_html:
     f_zapis.write(html_z_toc)
     f_zapis.close()
 
-    
+
 
 dzis = os.popen("date '+%d_%m_%Y'").read().strip()
 # dodamy jeszcze plik o tym, ze jest to nowy eksport (timestamp)
